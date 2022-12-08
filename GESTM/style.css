@@ -1,0 +1,109 @@
+/* General */
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 88px;
+    font-weight: 600;
+    color: #1D8B8F;
+}
+
+h2 {
+    font-size: 43px;
+    font-weight: 700;
+    color: #1D8B8F;
+}
+
+/* Header */
+header {
+    background-color: #1D8B8F;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #1D8B8F;
+    color:#F8F8F8;
+    font-size: 24px;
+    font-weight: 800;
+    height: 100px;
+}
+
+/* Dark background */
+.dark_background {
+    background-color: #003947;
+}
+
+.dark_background p, .dark_background h2 {
+    color: #F8F8F8;
+}
+
+/* Flex */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.flex-item {
+    padding: 10px;
+}
+
+/* Overlay */
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+}
+
+.container h2 {
+    color:#F8F8F8;
+}
+
+/* Circles */
+.circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 20px solid #1D8B8F;
+    display: inline-block;
+}
+
+/* Buttons */
+.orange_button {
+    background-color: #DB9616;
+    color:#003947;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    border: 0px;
+    border-radius: 40px;
+    padding: 8px 16px;
+}
+
+.orange_button:hover {
+    background-color: #003947;
+    color: #DB9616;
+}
+
+.white_button {
+    background-color: #F8F8F8;
+    color:#003947;
+    border-radius: 40px;
+    border: 1px solid #003947;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.white_button:hover {
+    background-color: #003947;
+    color: #F8F8F8;
+}
