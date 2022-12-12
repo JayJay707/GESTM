@@ -8,9 +8,41 @@
 </head>
 <body>
 
-    <header>aaa</header>
+    <header>
+        <ul class="nav">
+            <a href="#"><img id="logo" src="images/Logo.png"/></a>
+            <button class="orange_button" id="donate_button">FAIRE UN DON</button>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Nous soutenir</a></li>
+            <li><a href="#">Nos domaines d'actions</a></li>
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li><a href="#">Parrainage</a></li>
+            <li><a href="#">Nos missions</a></li>
+        </ul>
+    </header>
 
-    <section id="diaporama">diaporama</section>
+    <section id="diaporama">
+        <div class="slides fade">
+            <img src="images/Rectangle 1098.png" style="width: 100%;">
+            <h1 class="overlay" style="top: 100px; left: 20px;">Eau vive Burkina</h1>
+            <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
+        </div>
+        <div class="slides fade">
+            <img src="images/Rectangle 1098.png" style="width: 100%;">
+            <h1 class="overlay" style="top: 100px; left: 20px;">Parrainage</h1>
+            <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
+        </div>
+        <div class="slides fade">
+            <img src="images/Rectangle 1098.png" style="width: 100%;">
+            <h1 class="overlay" style="top: 100px; left: 20px;">Mise en place de l'activité mélifère</h1>
+            <button class="orange_button overlay" style="top: 450px; left: 20px;">Lire l'article →</button>
+        </div>
+        <div class="overlay" style="text-align: center; bottom: 20px; left: 50%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
 
     <section id="accueil_missions">
         <h1>NOS MISSIONS</h1>
@@ -46,15 +78,131 @@
         </div>
     </section>
 
-    <section id="accueil_actions">
+    <section class="container" id="accueil_actions">
         <h1>NOS DOMAINES D'ACTIONS</h1>
+        <span class="circle_full overlay" style="z-index: -1; top: 0px; left: 0px;"></span>
+        <div class="flex-container">
+            <div class="container">
+                <img src="images/Rectangle 1098 (1).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 100px;">LE DEVELOPPEMENT AGRICOLE</h2>
+                <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 200px;">En savoir plus</button>
+            </div>
+            <div class="container">
+                <img src="images/Rectangle 1098 (2).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 170px;">L'EDUCATION</h2>
+                <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 200px;">En savoir plus</button>
+            </div>
+        </div>
+        <div class="flex-container container">
+            <img src="images/Rectangle 1095.png" width="70%"/>
+            <h2 class="overlay" style="z-index: 10; top: 100px; left: 400px;">L'ACCES A L'EAU POTABLE</h2>
+            <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 550px;">En savoir plus</button>
+        </div>  
     </section>
 
     <section id="accueil_blog">
         <h1>BLOG</h1>
+        <div class="flex-container">
+            <div class="container">
+                <img src="images/Rectangle 1095 (2).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
+                <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+            </div>
+            <div class="container">
+                <img src="images/Rectangle 1096 (1).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
+                <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="container">
+                <img src="images/Rectangle 1097 (1).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
+                <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+            </div>
+            <div class="container">
+                <img src="images/Rectangle 1098 (3).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
+                <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+            </div>
+            <div class="container">
+                <img src="images/Rectangle 1099 (1).png" width="100%"/>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
+                <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <button class="white_button">Voir plus d'articles</button>
+        </div>
     </section>
 
-    <section id="contact"></section>
+    <section id="contact">
+        <div class="flex-container">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+        </div>
+        <div class="flex-container container">
+            <form id="contact_form">
+                <h2 style="color: #003947; margin: 10px; font-weight: 600;">Contact</h2>
+                <label for="nom">Nom*</label><br>
+                <input type="text" id="nom" name="nom"><br>
+                <label for="nom">Email*</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="nom">Téléphone*</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="nom">Message*</label><br>
+                <textarea id="message" name="message" rows="10" cols="75"></textarea><br>
+                <div class="flex-container">
+                    <input class="dark_button" type="submit" value="Envoyer"><br>
+                </div>
+            </form>
+            <img class="overlay" src="images/Ellipse 11.png" style="z-index: -2; left: 200px; bottom: 100px;">
+            <img class="overlay" src="images/Ellipse 12.png" style="z-index: -2; right: 200px; top: 0px;">
+            <span class="circle_full overlay" style="z-index: -1; top: 100px; left: 200px;"></span>
+            <span class="circle_full overlay" style="z-index: -1; bottom: 0px; right: 200px; height: 300px; width: 300px;"></span>
+        </div>
+        <div class="flex-container">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+            <img src="images/Polygon 1.png">
+            <img src="images/Polygon 2.png">
+        </div>
+    </section>
 
     <section class="partenaires container">
         <h1>Nos partenaires</h1>
@@ -75,6 +223,32 @@
             <p>Crédit photographique : GESTM- Etival lès-le-mans</p>
         </div>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000);
+        } 
+    </script>
 
 </body>
 </html>
