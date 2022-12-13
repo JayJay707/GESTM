@@ -214,6 +214,10 @@ input[type=text], textarea {
     max-width: 1000px;
 }
 
+#diaporama h1 {
+    color:#F8F8F8;
+}
+
 .slides {
     display: None;
 }
