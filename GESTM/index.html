@@ -5,18 +5,19 @@
 <title>Accueil</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="scripts/contact_form_validation.js"></script>
 </head>
 <body>
 
     <header>
         <ul class="nav">
             <a href="#"><img id="logo" src="images/Logo.png"/></a>
-            <button class="orange_button" id="donate_button">FAIRE UN DON</button>
+            <button class="orange_button2" id="donate_button">FAIRE UN DON</button>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Nous soutenir</a></li>
             <li><a href="#">Nos domaines d'actions</a></li>
             <li><a href="#">Qui sommes-nous ?</a></li>
-            <li><a href="#">Parrainage</a></li>
+            <li><a href="parrainage.html">Parrainage</a></li>
             <li><a href="#">Nos missions</a></li>
         </ul>
     </header>
@@ -42,7 +43,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </section>
+    </section><script src="scripts/diapo_script.js"></script>
 
     <section id="accueil_missions">
         <h1>NOS MISSIONS</h1>
@@ -60,7 +61,7 @@
             <div class="container">
                 <img src="images/Rectangle 1099.png" height="390px"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 30px;">CONSTRUCTION D'ECOLES</h2>
-                <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 20px;">En savoir plus sur la mission</button>
+                <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 10px;">En savoir plus sur la mission</button>
             </div>
         </div>
         <div class="flex-container">
@@ -68,11 +69,13 @@
         </div>
     </section>
 
-    <section class="dark_background container" id="accueil_apropos" style="height: 500px; z-index: 0;">
-        <h2 style="margin: 20px;">QUI SOMMES-NOUS?</h2>
-        <p style="display: inline-block; margin: 20px; width: 40%;">Groupe Etival Tiers Monde intervient au Burkina Faso dans la commune de Béré depuis bientôt 35 ans. Pour mettre en avant le travail réalisé depuis cette époque, nous avons décidé d’invité nos partenaires burkinabé en France afin qu’ils puissent témoigner et échanger ici.  Issouf KABRE, maire de la commune de Béré. Il sera accompagné  de la responsable du projet  « accès à l’eau potable » Yolande BALAYA et de Saïdou OUEDRAOGO</p>
-        <img src="images/Rectangle 1070.png" style="display: inline-block; width: 50%;" />
-        <img class="overlay" src="images/Ellipse 10.png" style="z-index: -1; right: 0px; bottom: 0px; width: 50%;"/>
+    <section class="dark_background container" id="accueil_apropos" style="height: 700px; z-index: 0;">
+        <h2>QUI SOMMES-NOUS?</h2>
+        <div class="flex-container">
+            <p style="margin: 20px; width: 40%;">Groupe Etival Tiers Monde intervient au Burkina Faso dans la commune de Béré depuis bientôt 35 ans. Pour mettre en avant le travail réalisé depuis cette époque, nous avons décidé d’invité nos partenaires burkinabé en France afin qu’ils puissent témoigner et échanger ici.  Issouf KABRE, maire de la commune de Béré. Il sera accompagné  de la responsable du projet  « accès à l’eau potable » Yolande BALAYA et de Saïdou OUEDRAOGO</p>
+            <img src="images/Rectangle 1070.png" style="width: 50%;" />
+        </div>
+        <img class="overlay" src="images/Ellipse 10.png" style="z-index: -1; right: 0px; top: 0px; width: 50%;"/>
         <div class="flex-container">
             <button class="orange_button" style="z-index: 10;">Nous découvrir</button>
         </div>
@@ -107,13 +110,13 @@
                 <img src="images/Rectangle 1095 (2).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 200px;">Education</p>
             </div>
             <div class="container">
                 <img src="images/Rectangle 1096 (1).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 200px;">Education</p>
             </div>
         </div>
         <div class="flex-container">
@@ -121,19 +124,19 @@
                 <img src="images/Rectangle 1097 (1).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 170px;">Education</p>
             </div>
             <div class="container">
                 <img src="images/Rectangle 1098 (3).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 200px;">Education</p>
             </div>
             <div class="container">
                 <img src="images/Rectangle 1099 (1).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 20px; left: 200px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 200px;">Education</p>
             </div>
         </div>
         <div class="flex-container">
@@ -163,7 +166,7 @@
             <img src="images/Polygon 2.png">
         </div>
         <div class="flex-container container">
-            <form id="contact_form">
+            <form id="contact_form" name="contactform">
                 <h2 style="color: #003947; margin: 10px; font-weight: 600;">Contact</h2>
                 <label for="nom">Nom*</label><br>
                 <input type="text" id="nom" name="nom"><br>
@@ -179,7 +182,7 @@
             </form>
             <img class="overlay" src="images/Ellipse 11.png" style="z-index: -2; left: 200px; bottom: 100px;">
             <img class="overlay" src="images/Ellipse 12.png" style="z-index: -2; right: 200px; top: 0px;">
-            <span class="circle_full overlay" style="z-index: -1; top: 100px; left: 200px;"></span>
+            <span class="circle_full overlay" style="z-index: -1; top: 200px; left: 300px;"></span>
             <span class="circle_full overlay" style="z-index: -1; bottom: 0px; right: 200px; height: 300px; width: 300px;"></span>
         </div>
         <div class="flex-container">
@@ -204,7 +207,7 @@
         </div>
     </section>
 
-    <section class="partenaires container">
+    <section class="container">
         <h1>Nos partenaires</h1>
         <img src="images/logo CR PAYS DE LA LOIRE.png"/>
         <img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/>
@@ -224,46 +227,6 @@
         </div>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        let timeoutId = null;
-        const slides = document.getElementsByClassName("slides");
-        const dots = document.getElementsByClassName("dot");
-        
-        showSlides();
-        function currentSlide(index) {
-                slideIndex = index;
-                showSlides();
-        }
-        function plusSlides(step) {
-            
-            if(step < 0) {
-                slideIndex -= 2;
-                
-                if(slideIndex < 0) {
-                slideIndex = slides.length - 1;
-                }
-            }
-            
-            showSlides();
-        }
-        function showSlides() {
-            for(let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            dots[i].classList.remove('active');
-            }
-            slideIndex++;
-            if(slideIndex > slides.length) {
-            slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].classList.add('active');
-            if(timeoutId) {
-                clearTimeout(timeoutId);
-            }
-            timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-        }
-    </script>
-
+    
 </body>
 </html>
