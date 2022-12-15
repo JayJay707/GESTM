@@ -219,6 +219,10 @@ input[type=text], textarea {
     border-bottom: 1px solid #1D8B8F;
 }
 
+#error_message {
+    color: red;
+}
+
 /* Slides */
 #diaporama {
     position: relative;

@@ -18,7 +18,7 @@
             <li><a href="#">Nos domaines d'actions</a></li>
             <li><a href="#">Qui sommes-nous ?</a></li>
             <li><a href="parrainage.html">Parrainage</a></li>
-            <li><a href="#">Nos missions</a></li>
+            <li><a href="mission.html">Nos missions</a></li>
         </ul>
     </header>
 
@@ -29,7 +29,7 @@
             <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
         </div>
         <div class="slides fade">
-            <img src="images/Rectangle 1098.png" style="width: 100%;">
+            <img src="images/unnamed.jpg" style="width: 100%;">
             <h1 class="overlay" style="top: 100px; left: 20px;">Parrainage</h1>
             <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
         </div>
@@ -50,7 +50,7 @@
         <div class="flex-container">
             <div class="container">
                 <img src="images/Rectangle 1097.png" height="390px"/>
-                <h2 class="overlay" style="z-index: 10; top: 0px; left: 20px;">LA CONFIANCE DES APICULTEURS</h2>
+                <h2 class="overlay" style="z-index: 10; top: 0px; left: 10px;">LA CONFIANCE DES APICULTEURS</h2>
                 <button class="orange_button overlay" style="z-index: 10; bottom: 20px; left: 0px;">En savoir plus sur la mission</button>
             </div>
             <div class="container">
@@ -60,7 +60,7 @@
             </div>
             <div class="container">
                 <img src="images/Rectangle 1099.png" height="390px"/>
-                <h2 class="overlay" style="z-index: 10; top: 100px; left: 30px;">CONSTRUCTION D'ECOLES</h2>
+                <h2 class="overlay" style="z-index: 10; top: 100px; left: 20px;">CONSTRUCTION D'ECOLES</h2>
                 <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 10px;">En savoir plus sur la mission</button>
             </div>
         </div>
@@ -166,16 +166,19 @@
             <img src="images/Polygon 2.png">
         </div>
         <div class="flex-container container">
-            <form id="contact_form" name="contactform">
+            <form id="contact_form" onsubmit="return validate();">
                 <h2 style="color: #003947; margin: 10px; font-weight: 600;">Contact</h2>
                 <label for="nom">Nom*</label><br>
-                <input type="text" id="nom" name="nom"><br>
+                <input type="text" id="name" name="name"><br>
                 <label for="nom">Email*</label><br>
                 <input type="text" id="email" name="email"><br>
                 <label for="nom">Téléphone*</label><br>
                 <input type="text" id="phone" name="phone"><br>
                 <label for="nom">Message*</label><br>
                 <textarea id="message" name="message" rows="10" cols="75"></textarea><br>
+                <div id="error_message">
+
+                </div>
                 <div class="flex-container">
                     <input class="dark_button" type="submit" value="Envoyer"><br>
                 </div>
