@@ -13,12 +13,12 @@
         <ul class="nav">
             <a href="#"><img id="logo" src="images/Logo.png"/></a>
             <button class="orange_button2" id="donate_button">FAIRE UN DON</button>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Nous soutenir</a></li>
-            <li><a href="#">Nos domaines d'actions</a></li>
-            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
+            <li><a href="about.html">Qui sommes-nous ?</a></li>
             <li><a href="parrainage.html">Parrainage</a></li>
             <li><a href="mission.html">Nos missions</a></li>
+            <li><a href="#">Accueil</a></li>
         </ul>
     </header>
 
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="flex-container">
-            <button class="white_button">Voir plus de missions</button>
+            <button class="white_button" onclick="window.location.href='mission.html'">Voir plus de missions</button>
         </div>
     </section>
 
@@ -166,19 +166,16 @@
             <img src="images/Polygon 2.png">
         </div>
         <div class="flex-container container">
-            <form id="contact_form" onsubmit="return validate();">
+            <form id="contact_form" method="post" action="scripts/contact_script.php">
                 <h2 style="color: #003947; margin: 10px; font-weight: 600;">Contact</h2>
                 <label for="nom">Nom*</label><br>
-                <input type="text" id="name" name="name"><br>
+                <input required type="text" id="name" name="name"><br>
                 <label for="nom">Email*</label><br>
-                <input type="text" id="email" name="email"><br>
+                <input required type="email" id="email" name="email"><br>
                 <label for="nom">Téléphone*</label><br>
-                <input type="text" id="phone" name="phone"><br>
+                <input required pattern="[0-9]{10}" type="text" id="phone" name="phone"><br>
                 <label for="nom">Message*</label><br>
-                <textarea id="message" name="message" rows="10" cols="75"></textarea><br>
-                <div id="error_message">
-
-                </div>
+                <textarea required id="message" name="message" rows="10" cols="75"></textarea><br>
                 <div class="flex-container">
                     <input class="dark_button" type="submit" value="Envoyer"><br>
                 </div>
@@ -230,6 +227,5 @@
         </div>
     </footer>
 
-    
 </body>
 </html>

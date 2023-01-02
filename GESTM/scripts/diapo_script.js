@@ -5,21 +5,10 @@ const dots = document.getElementsByClassName("dot");
 
 showSlides();
 function currentSlide(index) {
-        slideIndex = index;
+        slideIndex = index - 1;
         showSlides();
 }
-function plusSlides(step) {
-    
-    if(step < 0) {
-        slideIndex -= 2;
-        
-        if(slideIndex < 0) {
-        slideIndex = slides.length - 1;
-        }
-    }
-    
-    showSlides();
-}
+
 function showSlides() {
     for(let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
