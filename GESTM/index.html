@@ -12,7 +12,7 @@
     <header>
         <ul class="nav">
             <a href="#"><img id="logo" src="images/Logo.png"/></a>
-            <button class="orange_button2" id="donate_button">FAIRE UN DON</button>
+            <button class="orange_button2" onclick="window.location.href='don.html'">FAIRE UN DON</button>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
             <li><a href="about.html">Qui sommes-nous ?</a></li>
@@ -124,7 +124,7 @@
                 <img src="images/Rectangle 1097 (1).png" width="100%"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 10px;">TITRE DE L'ARTICLE</h2>
                 <button class="orange_button overlay article_button" style="z-index: 10; bottom: 30px; left: 10px;">Lire l'article →</button>
-                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 170px;">Education</p>
+                <p class="blog_tag overlay" style="z-index: 10; bottom: 10px; left: 150px;">Education</p>
             </div>
             <div class="container">
                 <img src="images/Rectangle 1098 (3).png" width="100%"/>
@@ -173,7 +173,7 @@
                 <label for="nom">Email*</label><br>
                 <input required type="email" id="email" name="email"><br>
                 <label for="nom">Téléphone*</label><br>
-                <input required pattern="[0-9]{10}" type="text" id="phone" name="phone"><br>
+                <input required pattern="[0-9]{10}" type="tel" id="phone" name="phone"><br>
                 <label for="nom">Message*</label><br>
                 <textarea required id="message" name="message" rows="10" cols="75"></textarea><br>
                 <div class="flex-container">

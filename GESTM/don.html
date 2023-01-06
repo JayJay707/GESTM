@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Don</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="scripts/contact_form_validation.js"></script>
+</head>
+<body>
+
+    <header>
+        <ul class="nav">
+            <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+            <button class="orange_button2" onclick="window.location.href='don.html'">FAIRE UN DON</button>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
+            <li><a href="about.html">Qui sommes-nous ?</a></li>
+            <li><a href="parrainage.html">Parrainage</a></li>
+            <li><a href="mission.html">Nos missions</a></li>
+            <li><a href="index.html">Accueil</a></li>
+        </ul>
+    </header>
+
+    <style>
+        form p {
+            border: 1px solid #1D8B8F;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0px;
+            color: #1D8B8F;
+        }
+        .form_part {
+            border: 1px solid #1D8B8F;
+            border-radius: 8px;
+        }
+        .title {
+            color: #F8F8F8;
+            background-color: #1D8B8F;
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+
+    <section>
+        <h1 style="margin-top: 50px;">TITRE</h1>
+        <p>Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis, cursus ante curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium aliquam phasellus ipsum metus quisque auctor tristique donec nibh, praesent congue ultricies aenean ornare ligula sagittis proin sed vestibulum purus tempus aenean neque aliquam curae vivamus purus egestas ligula tincidunt nullam.</p>
+        <div class="flex-container">
+            <img src="images/Rectangle 1095 (6).png" width="90%">
+        </div>
+        <h2>SOUS TITRE</h2>
+        <p>Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis, cursus ante curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium aliquam phasellus ipsum metus quisque auctor tristique donec nibh, praesent congue ultricies aenean ornare ligula sagittis proin sed vestibulum purus tempus aenean neque aliquam curae vivamus purus egestas ligula tincidunt nullam.</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <form id="donate_form" method="post">
+                <div class="flex-container" style="flex-direction: column;">
+                    <div class="flex-container form_part" style="flex-direction: column;">
+                        <div class="title">
+                            <h3 style="margin-top: 30px;">1. Mon don</h3>
+                        </div>
+                        <div>Don</div>
+                        <img src="images/Rectangle 1080.png">
+                        <div class="flex-container">
+                            <p>10€</p>
+                            <p>20€</p>
+                            <p>50€</p>
+                            <p>100€</p>
+                        </div>
+                        <input required type="text" id="montant_libre" name="montant_libre" placeholder="Montant libre"><br>
+                    </div>
+                    <div class="flex-container form_part" style="flex-direction: column;">
+                        <div class="title">
+                            <h3 style="margin-top: 30px;">2. Mes coordonnées</h3>
+                        </div>
+                        <input required type="email" id="email" name="email" placeholder="Email*"><br>
+                        <div class="flex-container">
+                            <select required id="cars" name="cars">
+                                <option value="" disabled selected hidden>Civilité*</option>
+                                <option value="madame">Madame</option>
+                                <option value="monsieur">Monsieur</option>
+                            </select>
+                            <input required type="text" id="fname" name="fname" placeholder="Prénom*"><br>
+                        </div>
+                    </div>
+                    <div class="flex-container form_part" style="flex-direction: column;">
+                        <div class="title">
+                            <h3 style="margin-top: 30px;">3. Règlement</h3>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="container">
+        <h1>Nos partenaires</h1>
+        <img src="images/logo CR PAYS DE LA LOIRE.png"/>
+        <img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/>
+        <img src="images/logo_AS-CCAS.png"/>
+        <img src="images/logoEVInternationale.png"/>
+        <img src="images/LOGO Complet_Siderm (004).png" />
+        <img src="images/logo-agencemicroprojets.png"/>
+        <img src="images/LOGO FILLE COULEUR-1.png"/>
+        <img src="images/LOGO COMMUNE ETIVAL.png" />
+        <span class="circle overlay" style="z-index: -1; top: 0px; right: 0px;"></span>
+    </section>
+
+    <footer>
+        <div class="flex-container">
+            <p>Mentions légales</p>
+            <p>Crédit photographique : GESTM- Etival lès-le-mans</p>
+        </div>
+    </footer>
+
+</body>
+</html>
