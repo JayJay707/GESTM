@@ -25,6 +25,10 @@ p {
     margin: 20px;
 }
 
+#partenaires img {
+    max-width: 200px;
+}
+
 /* Header */
 header {
     background-color: #1D8B8F;
@@ -33,7 +37,10 @@ header {
 }
 
 #logo {
-    margin: 10px;
+    margin: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .nav {
@@ -42,7 +49,7 @@ header {
     padding: 0px;
 }
 
-.nav li, .nav button {
+.nav li {
     float: right;
     margin-top: 20px;
     margin-right: 10px;
@@ -81,11 +88,6 @@ footer {
     gap: 20px;
     justify-content: center;
     margin: 30px;
-}
-
-.flex-item {
-    padding: 10px;
-    margin: 10px;
 }
 
 /* Overlay */
@@ -210,7 +212,7 @@ footer {
     background-color: #F8F8F8;
 }
 
-input[type=text], input[type=email], #contact_form label, textarea {
+input[type=text], input[type=email], #contact_form label, textarea, input[type=tel], input[type=date], input[type=number] {
     width: 500px;
     margin: 10px;
     padding: 10px;
@@ -218,7 +220,7 @@ input[type=text], input[type=email], #contact_form label, textarea {
     color: #1D8B8F;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], textarea, input[type=tel], input[type=date], input[type=number] {
     border: none;
     border-bottom: 1px solid #1D8B8F;
 }
@@ -236,6 +238,13 @@ input[type=text], input[type=email], textarea {
 
 #diaporama h1 {
     color:#F8F8F8;
+    top: 100px;
+    left: 100px;
+}
+
+#diaporama button {
+    bottom: 100px;
+    left: 100px;
 }
 
 .slides {
@@ -262,4 +271,20 @@ input[type=text], input[type=email], textarea {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* Missions */
+#accueil_missions img {
+    height: 390px;
+}
+
+/* Thank you */
+.thank_you {
+    background-color: #F8F8F8;
+    border: 1px solid #1D8B8F;
+    border-radius: 8px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
 }

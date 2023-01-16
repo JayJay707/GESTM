@@ -5,21 +5,22 @@
 <title>Don</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<script src="scripts/contact_form_validation.js"></script>
 </head>
 <body>
 
     <header>
-        <ul class="nav">
-            <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
-            <button class="orange_button2" onclick="window.location.href='don.html'">FAIRE UN DON</button>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
-            <li><a href="about.html">Qui sommes-nous ?</a></li>
-            <li><a href="parrainage.html">Parrainage</a></li>
-            <li><a href="mission.html">Nos missions</a></li>
-            <li><a href="index.html">Accueil</a></li>
-        </ul>
+        <div class="flex-container" style="margin-top: 0px; align-items: flex-end; justify-content: flex-end;">
+            <ul class="nav">
+                <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+                <li><a href="parrainage.html">Parrainage</a></li>
+                <li><a href="mission.html">Nos missions</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+            <button class="orange_button2" id="donate_button" onclick="window.location.href='don.html'">FAIRE UN DON</button>  
+        </div>
     </header>
 
     <style>
@@ -41,6 +42,20 @@
             border-radius: 8px 8px 0px 0px;
             height: 100px;
             text-align: center;
+        }
+
+        select {
+            color:#003947;
+            background-color: #F8F8F8;
+            border: 1px solid #1D8B8F;
+            border-radius: 8px;
+            height: 40px;
+        }
+        input[type=text], input[type=email], input[type=date], input[type=tel] {
+            width: 400px;
+        }
+        label {
+            color:#003947;
         }
     </style>
 
@@ -76,15 +91,26 @@
                         <div class="title">
                             <h3 style="margin-top: 30px;">2. Mes coordonnées</h3>
                         </div>
-                        <input required type="email" id="email" name="email" placeholder="Email*"><br>
-                        <div class="flex-container">
-                            <select required id="cars" name="cars">
+                        <input required type="email" id="email" name="email" placeholder="Email*">
+                        <div class="flex-container" style="margin-top: 0px; margin-bottom: 0px;">
+                            <select style="width: 30%;" required id="civilité" name="civilité">
                                 <option value="" disabled selected hidden>Civilité*</option>
                                 <option value="madame">Madame</option>
                                 <option value="monsieur">Monsieur</option>
                             </select>
-                            <input required type="text" id="fname" name="fname" placeholder="Prénom*"><br>
+                            <input style="width: 90%;" required type="text" id="fname" name="fname" placeholder="Prénom*">
                         </div>
+                        <input required type="text" id="lname" name="lname" placeholder="Nom*">
+                        <input required type="text" id="address" name="address" placeholder="Adresse*">
+                        <input type="text" id="address2" name="address2" placeholder="Complément d'adresse">
+                        <div class="flex-container" style="margin: 0px;">
+                            <input style="width: 40%;" required type="text" id="postcode" name="postcode" placeholder="Code postal*">
+                            <input style="width: 40%;" required type="text" id="city" name="city" placeholder="Ville*">
+                        </div>
+                        <input required type="text" id="country" name="country" placeholder="Pays*">
+                        <input type="tel" id="phone" name="phone" placeholder="Téléphone">
+                        <label for="birthday">Date de naissance:</label>
+                        <input type="date" id="birthday" name="birthday" placeholder="JJ/MM/AA">
                     </div>
                     <div class="flex-container form_part" style="flex-direction: column;">
                         <div class="title">
@@ -97,16 +123,16 @@
         
     </section>
 
-    <section class="container">
+    <section class="container" id="partenaires">
         <h1>Nos partenaires</h1>
-        <img src="images/logo CR PAYS DE LA LOIRE.png"/>
-        <img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/>
-        <img src="images/logo_AS-CCAS.png"/>
-        <img src="images/logoEVInternationale.png"/>
-        <img src="images/LOGO Complet_Siderm (004).png" />
-        <img src="images/logo-agencemicroprojets.png"/>
-        <img src="images/LOGO FILLE COULEUR-1.png"/>
-        <img src="images/LOGO COMMUNE ETIVAL.png" />
+        <a href="https://www.paysdelaloire.fr"><img src="images/logo CR PAYS DE LA LOIRE.png"/></a>
+        <a href="https://www.sarthe.fr"><img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/></a>
+        <a href="https://www.ccas.fr/application_ccasfr.php"><img src="images/logo_AS-CCAS.png"/></a>
+        <a href="https://www.eau-vive-internationale.org"><img src="images/logoEVInternationale.png"/></a>
+        <a href="https://www.siderm.org"><img src="images/LOGO Complet_Siderm (004).png" /></a>
+        <a href="https://www.agencemicroprojets.org"><img src="images/logo-agencemicroprojets.png"/></a>
+        <a href="https://www.mairie-fille.org"><img src="images/LOGO FILLE COULEUR-1.png"/></a>
+        <a href="https://www.etival-les-le-mans.com"><img src="images/LOGO COMMUNE ETIVAL.png" /></a>
         <span class="circle overlay" style="z-index: -1; top: 0px; right: 0px;"></span>
     </section>
 

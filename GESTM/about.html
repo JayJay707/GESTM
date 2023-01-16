@@ -5,21 +5,22 @@
 <title>Accueil</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<script src="scripts/contact_form_validation.js"></script>
 </head>
 <body>
 
     <header>
-        <ul class="nav">
-            <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
-            <button class="orange_button2" id="donate_button">FAIRE UN DON</button>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Nos domaines d'actions</a></li>
-            <li><a href="#">Qui sommes-nous ?</a></li>
-            <li><a href="parrainage.html">Parrainage</a></li>
-            <li><a href="mission.html">Nos missions</a></li>
-            <li><a href="index.html">Accueil</a></li>
-        </ul>
+        <div class="flex-container" style="margin-top: 0px; align-items: flex-end; justify-content: flex-end;">
+            <ul class="nav">
+                <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+                <li><a href="parrainage.html">Parrainage</a></li>
+                <li><a href="mission.html">Nos missions</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+            <button class="orange_button2" id="donate_button" onclick="window.location.href='don.html'">FAIRE UN DON</button>  
+        </div>
     </header>
 
     <section class="container">
@@ -59,16 +60,16 @@
         <p>Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis, cursus ante curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium aliquam phasellus ipsum metus quisque auctor tristique donec nibh, praesent congue ultricies aenean ornare ligula sagittis proin sed vestibulum purus tempus aenean neque aliquam curae vivamus purus egestas ligula tincidunt nullam.</p>
     </section>
 
-    <section class="container">
+    <section class="container" id="partenaires">
         <h1>Nos partenaires</h1>
-        <img src="images/logo CR PAYS DE LA LOIRE.png"/>
-        <img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/>
-        <img src="images/logo_AS-CCAS.png"/>
-        <img src="images/logoEVInternationale.png"/>
-        <img src="images/LOGO Complet_Siderm (004).png" />
-        <img src="images/logo-agencemicroprojets.png"/>
-        <img src="images/LOGO FILLE COULEUR-1.png"/>
-        <img src="images/LOGO COMMUNE ETIVAL.png" />
+        <a href="https://www.paysdelaloire.fr"><img src="images/logo CR PAYS DE LA LOIRE.png"/></a>
+        <a href="https://www.sarthe.fr"><img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/></a>
+        <a href="https://www.ccas.fr/application_ccasfr.php"><img src="images/logo_AS-CCAS.png"/></a>
+        <a href="https://www.eau-vive-internationale.org"><img src="images/logoEVInternationale.png"/></a>
+        <a href="https://www.siderm.org"><img src="images/LOGO Complet_Siderm (004).png" /></a>
+        <a href="https://www.agencemicroprojets.org"><img src="images/logo-agencemicroprojets.png"/></a>
+        <a href="https://www.mairie-fille.org"><img src="images/LOGO FILLE COULEUR-1.png"/></a>
+        <a href="https://www.etival-les-le-mans.com"><img src="images/LOGO COMMUNE ETIVAL.png" /></a>
         <span class="circle overlay" style="z-index: -1; top: 0px; right: 0px;"></span>
     </section>
 

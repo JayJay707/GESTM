@@ -2,41 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Accueil</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<script src="scripts/contact_form_validation.js"></script>
 </head>
 <body>
 
     <header>
-        <ul class="nav">
-            <a href="#"><img id="logo" src="images/Logo.png"/></a>
-            <button class="orange_button2" onclick="window.location.href='don.html'">FAIRE UN DON</button>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
-            <li><a href="about.html">Qui sommes-nous ?</a></li>
-            <li><a href="parrainage.html">Parrainage</a></li>
-            <li><a href="mission.html">Nos missions</a></li>
-            <li><a href="#">Accueil</a></li>
-        </ul>
+        <div class="flex-container" style="margin-top: 0px; align-items: flex-end; justify-content: flex-end;">
+            <ul class="nav">
+                <a href="index.html"><img id="logo" src="images/Logo.png"/></a>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="domaines_action.html">Nos domaines d'actions</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+                <li><a href="parrainage.html">Parrainage</a></li>
+                <li><a href="mission.html">Nos missions</a></li>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+            <button class="orange_button2" id="donate_button" onclick="window.location.href='don.html'">FAIRE UN DON</button>  
+        </div>
     </header>
 
-    <section id="diaporama">
+    <section id="diaporama" style="margin-top: 30px;">
         <div class="slides fade">
             <img src="images/Rectangle 1098.png" style="width: 100%;">
-            <h1 class="overlay" style="top: 100px; left: 20px;">Eau vive Burkina</h1>
-            <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
+            <h1 class="overlay">Eau vive Burkina</h1>
+            <button class="orange_button overlay" onclick="window.location.href='eau_vive.html'">Lire l'article →</button>
         </div>
         <div class="slides fade">
             <img src="images/unnamed.jpg" style="width: 100%;">
-            <h1 class="overlay" style="top: 100px; left: 20px;">Parrainage</h1>
-            <button class="orange_button overlay" style="top: 300px; left: 20px;">Lire l'article →</button>
+            <h1 class="overlay">Parrainage</h1>
+            <button class="orange_button overlay">Lire l'article →</button>
         </div>
         <div class="slides fade">
             <img src="images/Rectangle 1098.png" style="width: 100%;">
-            <h1 class="overlay" style="top: 100px; left: 20px;">Mise en place de l'activité mélifère</h1>
-            <button class="orange_button overlay" style="top: 450px; left: 20px;">Lire l'article →</button>
+            <h1 class="overlay">Activité mélifère</h1>
+            <button class="orange_button overlay">Lire l'article →</button>
         </div>
         <div class="overlay" style="text-align: center; bottom: 20px; left: 50%;">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -49,17 +51,17 @@
         <h1>NOS MISSIONS</h1>
         <div class="flex-container">
             <div class="container">
-                <img src="images/Rectangle 1097.png" height="390px"/>
+                <img src="images/Rectangle 1097.png"/>
                 <h2 class="overlay" style="z-index: 10; top: 0px; left: 10px;">LA CONFIANCE DES APICULTEURS</h2>
                 <button class="orange_button overlay" style="z-index: 10; bottom: 20px; left: 0px;">En savoir plus sur la mission</button>
             </div>
             <div class="container">
-                <img src="images/Rectangle 1098.png" height="390px"/>
+                <img src="images/Rectangle 1098.png"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 90px;">EAU VIVE BURKINA</h2>
                 <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 100px;">En savoir plus sur la mission</button>
             </div>
             <div class="container">
-                <img src="images/Rectangle 1099.png" height="390px"/>
+                <img src="images/Rectangle 1099.png"/>
                 <h2 class="overlay" style="z-index: 10; top: 100px; left: 20px;">CONSTRUCTION D'ECOLES</h2>
                 <button class="orange_button overlay" style="z-index: 10; bottom: 30px; left: 10px;">En savoir plus sur la mission</button>
             </div>
@@ -77,7 +79,7 @@
         </div>
         <img class="overlay" src="images/Ellipse 10.png" style="z-index: -1; right: 0px; top: 0px; width: 50%;"/>
         <div class="flex-container">
-            <button class="orange_button" style="z-index: 10;">Nous découvrir</button>
+            <button class="orange_button" style="z-index: 10;"onclick="window.location.href='about.html'">Nous découvrir</button>
         </div>
     </section>
 
@@ -168,14 +170,10 @@
         <div class="flex-container container">
             <form id="contact_form" method="post" action="scripts/contact_script.php">
                 <h2 style="color: #003947; margin: 10px; font-weight: 600;">Contact</h2>
-                <label for="nom">Nom*</label><br>
-                <input required type="text" id="name" name="name"><br>
-                <label for="nom">Email*</label><br>
-                <input required type="email" id="email" name="email"><br>
-                <label for="nom">Téléphone*</label><br>
-                <input required pattern="[0-9]{10}" type="tel" id="phone" name="phone"><br>
-                <label for="nom">Message*</label><br>
-                <textarea required id="message" name="message" rows="10" cols="75"></textarea><br>
+                <input required type="text" id="name" name="name" placeholder="Nom*"><br>
+                <input required type="email" id="email" name="email" placeholder="Email*"><br>
+                <input required pattern="[0-9]{10}" type="tel" id="phone" name="phone" placeholder="Téléphone*"><br>
+                <textarea required id="message" name="message" rows="10" cols="75" placeholder="Message*"></textarea><br>
                 <div class="flex-container">
                     <input class="dark_button" type="submit" value="Envoyer"><br>
                 </div>
@@ -207,16 +205,16 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="partenaires">
         <h1>Nos partenaires</h1>
-        <img src="images/logo CR PAYS DE LA LOIRE.png"/>
-        <img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/>
-        <img src="images/logo_AS-CCAS.png"/>
-        <img src="images/logoEVInternationale.png"/>
-        <img src="images/LOGO Complet_Siderm (004).png" />
-        <img src="images/logo-agencemicroprojets.png"/>
-        <img src="images/LOGO FILLE COULEUR-1.png"/>
-        <img src="images/LOGO COMMUNE ETIVAL.png" />
+        <a href="https://www.paysdelaloire.fr"><img src="images/logo CR PAYS DE LA LOIRE.png"/></a>
+        <a href="https://www.sarthe.fr"><img src="images/LOGO CONSEIL DEPARTEMENTAL SARTHE.png"/></a>
+        <a href="https://www.ccas.fr/application_ccasfr.php"><img src="images/logo_AS-CCAS.png"/></a>
+        <a href="https://www.eau-vive-internationale.org"><img src="images/logoEVInternationale.png"/></a>
+        <a href="https://www.siderm.org"><img src="images/LOGO Complet_Siderm (004).png" /></a>
+        <a href="https://www.agencemicroprojets.org"><img src="images/logo-agencemicroprojets.png"/></a>
+        <a href="https://www.mairie-fille.org"><img src="images/LOGO FILLE COULEUR-1.png"/></a>
+        <a href="https://www.etival-les-le-mans.com"><img src="images/LOGO COMMUNE ETIVAL.png" /></a>
         <span class="circle overlay" style="z-index: -1; top: 0px; right: 0px;"></span>
     </section>
 
